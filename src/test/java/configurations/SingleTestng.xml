@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Talo" parallel="tests" thread-count="1">
+    <listeners>
+        <listener class-name="supports.ExcelReport"/>
+    </listeners>
+    <parameter name="deviceName" value="LC6B4B402499"/>
+    <parameter name="platformVersion" value="4.4.2"/>
+    <parameter name="uRL" value="http://0.0.0.0:4723/wd/hub"/>
+
+    <test name="HTC">
+        <classes>
+            <class name="modules.AccountRegistering"/>
+        </classes>
+    </test>
+
+    <!--<newTestCase name="J2">-->
+        <!--<parameter name="sDeviceName" value="9201347300c483bd"/>-->
+        <!--<parameter name="sPlatformVersion" value="5.1.1"/>-->
+        <!--<parameter name="sURL" value="http://0.0.0.0:4723/wd/hub"/>-->
+        <!--<parameter name="sPhoneNumber" value="09999999580"/>-->
+        <!--<parameter name="sPassword" value="qqqqqq"/>-->
+        <!--<parameter name="sFirstName" value="Dau"/>-->
+        <!--<parameter name="sLastName" value="Nguyen"/>-->
+        <!--<classes>-->
+            <!--<class name="modules.ManageAccount"/>-->
+        <!--</classes>-->
+    <!--</newTestCase>-->
+
+    <!--<newTestCase name="Nexus">-->
+        <!--<parameter name="sDeviceName" value="00c274641540bbc3"/>-->
+        <!--<parameter name="sPlatformVersion" value="7.1.1"/>-->
+        <!--<parameter name="sURL" value="http://0.0.0.0:4723/wd/hub"/>-->
+        <!--<parameter name="sPhoneNumber" value="0999998101"/>-->
+        <!--<parameter name="sPassword" value="qqqqqq"/>-->
+        <!--<parameter name="sFirstName" value="Dau"/>-->
+        <!--<parameter name="sLastName" value="Nguyen"/>-->
+        <!--<classes>-->
+            <!--<class name="modules.Nexus_ManageAccount"/>-->
+        <!--</classes>-->
+    <!--</newTestCase>-->
+
+    <!--<newTestCase name="J7">-->
+        <!--<parameter name="sDeviceName" value="33002399be31526b"/>-->
+        <!--<parameter name="sPlatformVersion" value="6.0.1"/>-->
+        <!--<parameter name="sURL" value="http://0.0.0.0:4723/wd/hub"/>-->
+        <!--<parameter name="sPhoneNumber" value="09999999580"/>-->
+        <!--<parameter name="sPassword" value="qqqqqq"/>-->
+        <!--<parameter name="sFirstName" value="Dau"/>-->
+        <!--<parameter name="sLastName" value="Nguyen"/>-->
+        <!--<classes>-->
+            <!--<class name="modules.ManageAccount"/>-->
+        <!--</classes>-->
+    <!--</newTestCase>-->
+</suite>
